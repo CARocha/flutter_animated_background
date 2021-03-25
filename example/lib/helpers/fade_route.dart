@@ -9,7 +9,7 @@ class FadeRoute<T> extends MaterialPageRoute<T> {
       Animation<double> animation,
       Animation<double> secondaryAnimation,
       Widget child) {
-    if (settings.isInitialRoute)
+    if (settings.name == 'SpaceSplash')
       return child;
     return new FadeTransition(opacity: animation, child: child);
   }
